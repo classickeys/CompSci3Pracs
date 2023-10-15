@@ -1,0 +1,48 @@
+nav .login{
+    display: none;
+}
+.start-container {
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+
+ /* Style for the card */
+ .card {
+    margin-top: 3%;
+    background-color: #cb958e2f;
+        border-radius: 10px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2%;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+    width: 100%; /* Each card takes the full width of its grid cell */
+    gap: 5%; /* Add margin to the right for spacing */
+    padding-bottom: 5%; /* Add margin to the bottom for spacing */
+  }
+  
+  /* Style for card text */
+  .card h2 {
+    font-size: 24px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .card img{
+    width: 30%;
+    border-radius: 10px;
+    margin: 0 auto;
+
+  }
+
+
+  /* Hover effect for cards */
+  .card:hover {
+    transform: translateY(-5px);
+  }

@@ -1,0 +1,300 @@
+
+
+.hospital{
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    gap: 3%;
+    padding: 2%;
+}
+
+.hospitalImage .iframe{
+    max-width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: fit-content;
+    padding: 2%;
+    margin: 5%;
+    border-radius: 10px;
+
+    background-color: rgba(54, 54, 54, 0.11);
+}
+.hospitalImage img{
+    width: auto;
+    object-fit: fill;
+    max-height: 400px;
+    vertical-align: middle;
+    border-radius: 10px;
+    margin: auto;
+}
+
+
+.hospitalImage figure{
+    vertical-align: middle;
+    display: inline-block;
+    max-width: auto;
+    
+    
+}
+
+.hospitalImage{
+    overflow: hidden;
+    background-color: rgba(139, 139, 138, 0.199);
+    border-radius: 10px;
+  }
+
+.hospital aside{
+    padding: 2%;
+}
+
+.iframe li {
+    list-style: none;
+}
+
+.insideText{
+    text-align: center;
+    padding: 2%;
+    margin: auto;
+    width: 60%;
+}
+
+.insideData aside table{
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  color: #8b8b8a;
+    position: relative;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.insideData td{
+}
+
+.insideData aside{
+  background-color: rgba(139, 139, 138, 0.199);
+  border-radius: 10px;
+  width: 70%;
+
+}
+
+.outsideText li{
+    position: relative;
+    list-style: none;
+    width: 60%;
+    left: 15%;
+}
+
+
+
+.hospital aside {
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    border-radius: 10px;
+    
+}
+
+
+.hospital video{
+  height: 60vh;
+  width: auto;
+}
+
+
+/* Style for the parallax container */
+.meetUs {
+  background-color: rgba(139, 139, 138, 0.199);
+  text-align: center;
+  
+  padding: 2%;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden; /* Ensure container wraps around floated elements */
+}
+
+
+/* Center the container horizontally and vertically */
+.meetUs-container {
+  position: relative;
+  
+}
+
+
+/* Style for the person container */
+.person {
+  background-color: #ffffff6b;
+  border-radius: 10px;
+  width: 300px; /* Set a fixed width for small square containers */
+  height: 300px; /* Set a fixed height for small square containers */
+  margin: 4%; /* Add margin for spacing between .person divs */
+  padding: 0; /* Remove padding */
+  text-align: center;
+    overflow: hidden; /* Hide overflowing content */
+  position: relative; /* Position for parallax effect */
+  transition: transform 0.2s ease-in-out; /* Smooth transition for parallax */
+  float: left; /* Float the .person divs to display them horizontally */
+  clear: none; /* Clear any previous float settings */
+}
+
+/* Style for the person's image */
+.person img {
+  max-width: 100%; /* Make the image fit horizontally within the container */
+  max-height: 100%; /* Make the image fit vertically within the container */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out; /* Smooth transition for parallax */
+  position: absolute; /* Position the image absolutely within the .person div */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style for text content (initially hidden) */
+.person-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 10px;
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.2s ease-in-out; /* Smooth transition for hover */
+}
+
+/* Style for text content on hover */
+.person:hover .person-content {
+  opacity: 1; /* Display on hover */
+}
+
+/* Style for text content */
+.person h2 {
+  margin: 0;
+  padding: 3%;
+  
+}
+
+.person h3{
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: #cb958e;
+  margin: 0;
+}
+
+.person p {
+  padding: 8%;
+  font-size: 0.8rem;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* Hover effect for parallax */
+.person:hover {
+  transform: scale(1.05); /* Adjust the image zoom on hover */
+
+}
+
+
+/* Hover effect for the image */
+.person:hover img {
+  transform: translateX(-200px);    /* Adjust the parallax effect distance */
+  display: none;
+  transition: display 0.8s ease-in-out;
+
+}
+
+.hospital h2{
+  text-align: center;
+}
+
+
+.hospital aside article{
+  
+  padding: 2%;
+}
+
+.dataCapture{
+    display: block;
+    gap: 3%;
+}
+
+/* Add this style to make the overlay transparent */
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Transparent background */
+  z-index: 1;
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Layout for smaller screens */
+    body {
+        text-align: center;
+        display: block;
+        text-align: center;
+        margin: auto;
+      }
+    .hospital{
+      min-width: 30%;
+    }
+
+
+    .hospital {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+      gap: 2%; /* The gap */
+    }
+  
+    /* Font size for better readability on smaller screens */
+    .hospital h1 {
+      font-size: 18px; /* Font size for h1 */
+    }
+  
+    .hospital h2 {
+      font-size: 14px; /* Font size for h2 */
+    }
+  
+    .hospital p,
+  .hospital li,
+  .insideText h2,
+  .insideText p,
+  .outsideText p,
+  .outsideText li,
+  .dataCapture td  {
+      font-size: 8px; /* Font size for paragraphs and list items */
+      text-align: center;
+    }
+  
+    /* Video size for smaller screens */
+    .hospital aside video {
+      width: 100%; /* Videos full width for smaller screens */
+      height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Center-align the image */
+  .hospitalImage img {
+    margin: 0 auto; /* Center the image  */
+    display: block; /* Image takes up the full width*/
+    max-width: 100%;
+  }
+
+  .hospitalImage figure, .hospitalImage .iframe{
+    max-width: 100%;
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+
+  }
+  
+  

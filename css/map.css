@@ -1,0 +1,13 @@
+.google-map {
+    padding-bottom: 30%; /* Decreased percentage value for a smaller map */
+    height: 300px; /* Set a fixed height for the map container */
+    position: relative;
+  }
+  
+  .google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }

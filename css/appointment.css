@@ -1,0 +1,235 @@
+
+
+
+/* Style the section */
+.section {
+  flex: 1; 
+  padding: 20px; 
+}
+
+.message{
+  flex: 1; 
+  padding: 20px; 
+  
+}
+
+/* form */
+
+form {
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  display: block;
+}
+
+label {
+  font-weight: bold;
+  color:#b48291;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #b48291;
+  border-radius: 3px;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color:#cb958e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 150px;
+}
+
+input[type="submit"]:hover {
+  background-color: #55b1c6;
+}
+
+/* Add margin-bottom to the main container to create space above the footer */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 70px; 
+}
+/* cards */
+.card-container {
+  flex: 1;
+  position: absolute;
+  top: 480px; 
+  left: 1000px; 
+  padding: 20px;
+}
+
+
+.card-title{
+  color:white;
+}
+
+.card-container .card {
+  width: 400px;
+  border: 1px solid #b48291;
+  border-radius: 5px;
+  margin: 10px;
+  overflow: hidden;
+  height: auto; }
+
+/* Card header for the top part */
+.card-container .card .card-header {
+  background-color: #b48291;
+  color: #fff;
+  padding: 10px;
+  height: 50px;
+}
+
+/* Modify the card content */
+.card-container .card-content {
+  padding: 20px;
+  overflow: auto; 
+  max-height: 100%; 
+}
+a {
+  text-decoration: none;
+}
+.phone-number,.email-address {
+  color: #a27784; 
+  font-weight: bold; 
+  font-size: 18px; 
+  
+}
+
+.phone-icon, .fab.fa-whatsapp, .fas.fa-envelope, .fas.fa-phone{
+  font-size: 18px; 
+  margin-right: 5px;
+  color: #8b8b8a;
+}
+
+.image-container {
+  position: relative; 
+  width: 100%; 
+  max-height: 300px; 
+  overflow: hidden; 
+  
+}
+
+/* Style for the image */
+.image-container img {
+  object-fit: cover; 
+  height: 300px;
+  width: 2000px;
+}
+
+/* .overlay {
+    position: absolute;
+    top: 0;
+    right: 1005px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(160, 156, 156, 0.4); /* Adjust the color and opacity as needed */
+
+/* Style for the text overlay */
+.text-overlay {
+  position: absolute;
+  top: 50%; 
+  left: 22%; 
+  transform: translate(-50%, -50%); 
+  color: white; 
+  padding: 10px; 
+  text-align: left; 
+  padding-left: 100px;
+ 
+}
+
+.button {
+  background-color: #cb958e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.button:hover {
+  background-color: #55b1c6;
+}
+
+
+.appointments{
+  width: 65vw;
+  margin: 0 auto;
+}
+
+
+/* Style the table */
+.appointments table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Style the table headers */
+.appointments th {
+  background-color: #f2f2f2;
+  text-align: left;
+  padding: 10px;
+}
+
+/* Style the table cells */
+.appointments td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* Style the "Book Now" buttons */
+.appointments button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.appointments button:hover {
+  background-color: #45a049;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 10%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}

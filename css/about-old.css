@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* font styling */
+
+/* color styling */
+
+html {
+    /* background-color: rgb(203, 149, 142, 0.2) ; */
+    background-color: rgb(238, 238, 238, 0.2);
+}
+
+nav {
+    background-color: rgb(54, 54, 54, 0.8);
+}
+
+
+h1,
+h2 {
+    color: #cb958e;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    color: #8b8b8a;
+}
+
+/* header
+ */
+
+header {
+    text-align: center;
+    background-color: rgb(139, 139, 138, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header a {
+    display: inline-block;
+    /* Display the logo as an inline-block element */
+
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+
+/* navbar  */
+
+nav,
+.dropdown {
+    color: #b48291;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+nav ul,
+.dropdown .dropbtn {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Styling for navigation list items */
+nav li {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+/* Styling for links */
+nav a {
+    text-decoration: none;
+    color: #cb958e;
+    display: block;
+}
+
+nav a:hover {
+    color: #55b1c6;
+}
+
+/* Active style - when a link is clicked */
+nav a.active {
+    color: aquamarine;
+}
+
+/* Style the content container */
+.content-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.stickyPos {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+/* footer edits  */
+/* Style the footer */
+
+
+.footer {
+    background-color: rgb(139, 139, 138, 0.4);
+    color: #fff;
+    padding: 30px 0;
+    max-width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h3 {
+    color: #cb958e;
+    font-size: 24px;
+}
+
+.footer p {
+    font-size: 16px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-info {
+    flex: 1;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+/* Add a min-height to the body to push down the footer */
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Styling for dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Styling for dropdown content links */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Styling for dropdown content links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Display dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the section */
+.section {
+    flex: 1;
+    padding: 20px;
+}
+
+.message {
+    flex: 1;
+    padding: 20px;
+
+}
+
+.office {
+    flex: 1;
+    padding: 20px;
+}
+
+/* form */
+
+form {
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+label {
+    font-weight: bold;
+    color: #b48291;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #b48291;
+    border-radius: 3px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #cb958e;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 150px;
+}
+
+input[type="submit"]:hover {
+    background-color: #55b1c6;
+}
+
+/* Add margin-bottom to the main container to create space above the footer */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+/* cards */
+.card-container {
+    flex: 1;
+    position: absolute;
+    top: 480px;
+    left: 1300px;
+    padding: 20px;
+}
+
+
+.card-title {
+    color: white;
+}
+
+.card-container .card {
+    width: 400px;
+    border: 1px solid #b48291;
+    border-radius: 5px;
+    margin: 10px;
+    overflow: hidden;
+    height: auto;
+}
+
+/* Card header for the top part */
+.card-container .card .card-header {
+    background-color: #b48291;
+    color: #fff;
+    padding: 10px;
+    height: 50px;
+}
+
+/* Modify the card content */
+.card-container .card-content {
+    padding: 20px;
+    overflow: auto;
+    /* Add scroll if content overflows */
+    max-height: 100%;
+    /* Restrict content height to prevent overlap */
+}
+
+a {
+    text-decoration: none;
+}
+
+.phone-number,
+.email-address {
+    color: #a27784;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.phone-icon,
+.fab.fa-whatsapp,
+.fas.fa-envelope,
+.fas.fa-phone {
+    font-size: 18px;
+    margin-right: 5px;
+    color: #8b8b8a;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+
+}
+
+/* Style for the image */
+.image-container img {
+    object-fit: cover;
+    height: 300px;
+    width: 2000px;
+}
+
+/* Style for the text overlay */
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    text-align: left;
+    padding-left: 100px;
+
+}
+
+.button {
+    background-color: #cb958e;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.button:hover {
+    background-color: #55b1c6;
+}
+
+/* Apply styles to the entire table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* Style the table headers (th) */
+th {
+    color: #a27784;
+    font-size: 20px;
+    padding: 10px;
+    text-align: left;
+
+}
+
+/* Style the table data cells (td) */
+td {
+    color: #8b8b8a;
+    padding: 10px;
+    font-size: 20px;
+    margin: 50px;
+
+}
+
+.direction {
+    color: red;
+}
+
+

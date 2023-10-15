@@ -1,0 +1,172 @@
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+  animation: moveAndZoom 20s linear infinite; /* Adjust the duration as needed */
+  transform-origin: center center; 
+}
+
+
+.image-container {
+  
+  margin-top: 15%;
+  position: relative;
+  width: 100%;
+  height: 35vh; /* Set the desired height for the container */
+  overflow: hidden;
+}
+
+
+@keyframes moveAndZoom {
+  0% {
+    transform: translateX(0) translateY(0) scale(1);
+  }
+  25% {
+    transform: translateX(5%) translateY(5%) scale(1.1); /* Adjust the scale factor as needed */
+  }
+  50% {
+    transform: translateX(0) translateY(0) scale(1);
+  }
+  75% {
+    transform: translateX(-5%) translateY(-5%) scale(1.1); /* Adjust the scale factor as needed */
+  }
+  100% {
+    transform: translateX(0) translateY(0) scale(1);
+  }
+}
+
+/* Style for the text overlay */
+.text-overlay h1 {
+  position: relative; 
+  display: block;
+  color: #cb958e; 
+  padding: 1%; 
+  text-align: center; 
+ 
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.card-container {
+    display: block;
+    margin: 0 auto;
+    padding: 2%;
+    text-align: center;
+  }
+  
+  .card {
+    background-color: #cb958e32;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+
+    max-width: 15%;
+    width: 15%;
+    display: inline-block;
+    
+    
+    margin: 10px; /* Add margin to create space between cards */
+  }
+  
+  .card h2{
+    white-space: nowrap;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    background-color: #cb958e17;
+    .lim{
+      transition: transform 0.3s ease-in;
+      transform: scale(1.1);
+    }
+  }
+
+
+.card-container img{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+  
+  button {
+    border: none;
+    outline: 0;
+    
+    padding: 8px 8px;
+    border-radius: 5px;
+    color: #f9f9f9;
+    background-color: rgba(139, 139, 138, 0.4);;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 14px;
+  }
+  
+
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+  
+  .feedbackContainer{
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+  }
+ 
+  
+  .responsive img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 2;
+  }
+
+  .responsive .person{
+    width: 100%;
+    height: 100%;
+  }
+
+  .responsive {
+    width: 20%; /* Adjust the width of each gallery item as needed */
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.stories{
+    text-align: center;
+    max-height: 150px;
+    margin: 0%;
+}
