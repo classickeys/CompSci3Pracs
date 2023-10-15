@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>RKMcare</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <h1>RKMcare</h1>
+    <p>....</p>
+
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About RKMcare</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="patient.html">Patient informatin</a></li>
+      <li><a href="doctors.html">Our Doctors</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="container">
+      <h1>Book an Appointment</h1>
+      <section>
+        <form id="bookingForm" action="process_patient.php" method="post">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required><br><br>
+
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required><br><br>
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required><br><br>
+
+          <label for="gender">Gender:</label>
+          <input type="radio" id="male" name="gender" value="Male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="Female">
+          <label for="female">Female</label><br><br>
+
+
+          <label for="Doctors">Doctors-Specialist</label>
+          <select id="Doctors" name="Doctors">
+            <option value="Oncologist">Oncologist</option>
+            <option value="Dermatologist">Dermatologist</option>
+            <option value="Cardiologist">Cardiologist</option>
+          </select><br>
+          <input type="submit" value="submit">
+        </form>
+      </section>
+    </div>
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-left">
+            <h3>About RKMcare</h3>
+            <p>RKM Care Tertiary Hospital is committed to providing high-quality healthcare services to our community.</p>
+        </div>
+        <div class="footer-center">
+            <h3>Contact Information</h3>
+            <p>
+                <strong>Address:</strong><br>
+                Hamilton Building, Lucas Avenue<br>
+                Makhanda, 6139<br>
+                South Africa
+            </p>
+            <p>
+                <strong>Email:</strong><br>
+                <a href="mailto:info@rkmcarehospital.com">info@rkmcarehospital.com</a>
+            </p>
+            <p>
+                <strong>Phone:</strong><br>
+                <a href="tel:+1234567890">+123 456 7890</a>
+            </p>
+            <p>
+                <strong>Working Hours:</strong><br>
+                Mon-Fri: 8:00 AM - 4:30 PM<br>
+                Sat-Sun: Closed
+            </p>
+        </div>
+        <div class="footer-right">
+            <h3>Connect with Us</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/YourFacebookPage" target="_blank"><img src="images/facebook.png"
+                        alt="Facebook"></a>
+                <a href="https://www.instagram.com/YourInstagramPage" target="_blank"><img src="images/instagram.jpg"
+                        alt="Instagram"></a>
+                <a href="https://twitter.com/YourTwitterPage" target="_blank"><img src="images/Twitter.png"
+                        alt="Twitter"></a>
+            </div>
+        </div>
+    </div>
+    <p class="copyright"><small>&copy; 2023 RKMcare Tertiary Hospital. All rights reserved.</small></p>
+</footer>
+
+</body>
+
+</html>
